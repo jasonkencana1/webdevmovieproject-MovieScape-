@@ -6,7 +6,7 @@ const MovieList = ({ movies }) => {
         <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 px-4">
             {movies.map((movie) => (
                 <div key={movie.mal_id} className="shadow-xl">
-                <Link href={`/${movie.mal_id}`} className="cursor-pointer">
+                <Link href={`/${movie.mal_id}`} className="cursor-pointer text-color-primary hover:text-color-accent transition-all">
                     <Image 
                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
                         alt="..." 
